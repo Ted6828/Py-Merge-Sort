@@ -1,4 +1,4 @@
-MergeSort = [8,5,3,9,2,1,70,4]
+MergeSort = []
 
 def Merge(Array):
     length = len(Array)
@@ -35,5 +35,8 @@ def Merge2(Array1, Array2):
             Var1 = Var1 + 1
     return Array3
 
-print(Merge(MergeSort))
-
+Values = int(input("Enter the number of values (Has to be even!) ... : "))
+for i in range(0, Values):
+    pog = int(input())
+    MergeSort.append(pog)
+print(*Merge(MergeSort),end=" ...Is the sorted list!")
